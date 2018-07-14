@@ -13,3 +13,4 @@ const docker = require('redbird').docker;
 
 // Route to any global ip
 proxy.register("jira.ericksonmarine.net", "http://jira_jira_1:8080", {ssl: true});
+proxy.register("wiki.ericksonmarine.net", "http://mediawiki_mediawiki_1:8080", {ssl: true});
