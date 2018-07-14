@@ -6,11 +6,10 @@ const proxy = require('redbird')({
         key: "./src/certs/private.pem",
         cert: "./src/certs/public.pem"
     },
-    xfwd: false
 });
 
 const docker = require('redbird').docker;
 //docker(proxy).register("hub.dbztech.com", "joxit/docker-registry-ui:static", {ssl: true});
 
 // Route to any global ip
-proxy.register("jira.ericksonmarine.net", "https://dbztech.com", {ssl: true});
+proxy.register("jira.ericksonmarine.net", "http://jira_jira_1:8080", {ssl: true});
