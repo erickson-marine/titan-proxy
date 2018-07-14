@@ -1,0 +1,16 @@
+{
+  "name": "docker-orion-proxy",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "docker-compose build",
+    "start": "docker-compose up -d",
+    "stop": "docker-compose down"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "redbird": "^0.7.0"
+  }
+}

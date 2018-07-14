@@ -1,0 +1,18 @@
+version: '3'
+services:
+  redbird:
+    build: .
+    ports:
+    - 80:80
+    - 443:443
+    - 5000:5000
+    networks:
+    - dmz
+    restart: always
+    volumes:
+    - /var/run/docker.sock:/var/run/docker.sock
+    user: root
+networks: 
+  dmz:
+    external:
+      name: dmz
